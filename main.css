@@ -1,0 +1,114 @@
+html {
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray; 
+    /* centered layout */
+    max-width: 80%;
+    margin: auto;
+    /* rounded corner for entire page*/
+    border: 1px solid blueviolet;
+    border-radius: 25px;
+}
+
+header {
+    background-image: linear-gradient(to right, cadetblue 0%, lightskyblue 100%);
+    background-color: lightskyblue;
+    border-radius: 25px 25px 0 0;
+}
+
+header h1 {
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+h1 {
+    font-style: italic !important;
+    text-align: center;
+    text-decoration-skip-ink: none;
+}
+
+/* remove for horizontal menu
+nav ul{
+    list-style-type: square;
+}
+*/
+
+ol {
+    list-style: lower-roman;
+    line-height: 2;
+}
+
+section {
+    font-weight: bold;
+    color: cadetblue ;
+}
+
+footer {
+    clear: both;
+    text-align: right;
+    background-image: linear-gradient(to right, cadetblue 0%, lightgreen 100%);
+    background-color: lightgreen;
+    font-size: small;
+    padding-right: 25px;
+    border-radius: 0 0 25px 25px;
+}
+
+/* horizontal nav from pg 239 and 
+https://www.w3schools.com/css/css_navbar_horizontal.asp */
+#nav_menu ul {
+    list-style-type: none;
+    margin:  0;
+    padding: 0;
+    overflow: hidden;  /* fill rest of space with color */
+    background-color: lightskyblue;
+    background-image: linear-gradient(to right, cadetblue 0%, lightskyblue 100%);
+}
+
+#nav_menu ul li {
+    float: left;
+    display: inline;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 100px;
+    padding: 1em 0;
+    background-color: grey;
+    color:black;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+
+#nav_menu ul li a.active{
+    background-color: dodgerblue;
+}
+
+#nav_menu ul li a:hover{
+    text-decoration: none;
+    background-color: darkslategray;
+    color: azure;
+}
+
+
+/* 2 column fluid layout pg 180-191 */
+main {
+    float: left;
+    width: 45%;
+    padding-left: 10px;
+    min-height: 80%;
+}
+
+aside {
+    float: right;
+    width: 50%;
+    background-color: azure;
+    padding-left: 10px;
+    min-height: 80%;
+}
+
+
